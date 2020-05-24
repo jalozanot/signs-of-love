@@ -95,7 +95,7 @@ body {
     position: relative;
     width: 100%;
     z-index: 1;
-    margin-bottom: -46px;
+    margin-bottom: -47px;
 }
 
 .monio-line::after,
@@ -148,4 +148,54 @@ body {
     color: #4A1B43;
     text-decoration: none;
     background-color: transparent;
+}
+
+.decoracion-qs {
+    display: inline-block;
+    position: relative;
+    color: red;
+}
+
+.decoracion-qs::after,
+.decoracion-qs::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+
+.decoracion-qs::before {
+    left: -470px;
+}
+
+.decoracion-qs::after {
+    right: -470px;
+}
+
+@media screen and (min-width: 100px) and (min-width: 5000px) {
+    .decoracion-qs::after,
+    .decoracion-qs::before {
+        content: "";
+        position: absolute;
+        width: 120;
+        height: 3px;
+        background-color: black;
+        top: 0.6em;
+    }
+    .decoracion-qs::before {
+        left: -140px;
+    }
+    .decoracion-qs::after {
+        right: -140px;
+    }
+}
+
+.div-center {
+    text-align: center;
+}
+
+.div-right {
+    text-align: right;
 }
