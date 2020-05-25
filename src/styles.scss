@@ -1,7 +1,9 @@
 body {
     background: #ffffff;
-    margin: 0;
-    padding: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     z-index: -1;
 }
@@ -153,6 +155,7 @@ body {
 .decoracion-qs {
     display: inline-block;
     position: relative;
+    width: 35%;
     color: red;
 }
 
@@ -160,36 +163,18 @@ body {
 .decoracion-qs::before {
     content: "";
     position: absolute;
-    width: 450px;
+    width: 100%;
     height: 3px;
     background-color: black;
     top: 0.6em;
 }
 
 .decoracion-qs::before {
-    left: -470px;
+    left: -100%;
 }
 
 .decoracion-qs::after {
-    right: -470px;
-}
-
-@media screen and (min-width: 100px) and (min-width: 5000px) {
-    .decoracion-qs::after,
-    .decoracion-qs::before {
-        content: "";
-        position: absolute;
-        width: 120;
-        height: 3px;
-        background-color: black;
-        top: 0.6em;
-    }
-    .decoracion-qs::before {
-        left: -140px;
-    }
-    .decoracion-qs::after {
-        right: -140px;
-    }
+    right: -100%;
 }
 
 .div-center {
