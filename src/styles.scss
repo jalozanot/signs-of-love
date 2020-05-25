@@ -155,8 +155,9 @@ body {
 .decoracion-qs {
     display: inline-block;
     position: relative;
-    width: 35%;
-    color: red;
+    width: 33%;
+    color: #4A1B43;
+    font-family: 'LeckerliOne-Regular';
 }
 
 .decoracion-qs::after,
@@ -183,4 +184,46 @@ body {
 
 .div-right {
     text-align: right;
+}
+
+.mision-qs {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    color: #4A1B43;
+    font-family: 'LeckerliOne-Regular';
+}
+
+.mision-qs::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+
+.mision-qs::after {
+    right: -10%;
+}
+
+.vision-qs {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    color: #4A1B43;
+    font-family: 'LeckerliOne-Regular';
+}
+
+.vision-qs::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+
+.vision-qs::before {
+    left: 0%;
 }
