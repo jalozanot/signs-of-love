@@ -207,6 +207,27 @@ body {
     right: -10%;
 }
 
+@media (min-width: 375px) and (max-width: 1200px) {
+    .mision-qs {
+        display: inline-block;
+        position: relative;
+        width: 90%;
+        color: #4A1B43;
+        font-family: 'LeckerliOne-Regular';
+    }
+    .mision-qs::after {
+        content: "";
+        position: absolute;
+        width: 85%;
+        height: 3px;
+        background-color: black;
+        top: 0.6em;
+    }
+    .mision-qs::after {
+        right: -10%;
+    }
+}
+
 .vision-qs {
     display: inline-block;
     position: relative;
@@ -226,4 +247,30 @@ body {
 
 .vision-qs::before {
     left: 0%;
+}
+
+@media (min-width: 375px) and (max-width: 1200px) {
+    .vision-qs {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        color: #4A1B43;
+        font-family: 'LeckerliOne-Regular';
+    }
+    .vision-qs::before {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 3px;
+        background-color: black;
+        top: 0.6em;
+    }
+    .vision-qs::before {
+        left: 0%;
+    }
+}
+
+.mision-text {
+    color: #4A1B43;
+    font-family: 'LeckerliOne-Regular';
 }
