@@ -207,7 +207,7 @@ body {
     right: -10%;
 }
 
-@media (min-width: 375px) and (max-width: 1200px) {
+@media (min-width: 100px) and (max-width: 1200px) {
     .mision-qs {
         display: inline-block;
         position: relative;
@@ -249,7 +249,7 @@ body {
     left: 0%;
 }
 
-@media (min-width: 375px) and (max-width: 1200px) {
+@media (min-width: 100px) and (max-width: 1200px) {
     .vision-qs {
         display: inline-block;
         position: relative;
@@ -273,4 +273,16 @@ body {
 .mision-text {
     color: #4A1B43;
     font-family: 'LeckerliOne-Regular';
+}
+
+.imagen_izquierda {
+    float: left;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.imagen_derecha {
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
 }
