@@ -1,1 +1,70 @@
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, aliquid cum iure iste repudiandae quisquam ut quaerat odit libero nobis eum, amet quis doloremque? Veritatis cumque hic ipsum quidem voluptas.</p>
+<div style="padding-bottom: 70px;">
+
+    <div class="container">
+
+        <div class="column" style="padding-top: 60px;">
+            <div class="div-center ">
+                <h5 class="decoracion-qs">Detalle Producto</h5>
+            </div>
+            <div class="card">
+
+                <div class="row">
+                    <div align="center" class="col-6 separador-top-35px">
+                        <img src="./assets/img/prueba-d.jpg" alt="" width="100%">
+
+                    </div>
+                    <div class="col-6 separador-top-50px">
+
+                        <div class="column container">
+                            <div class="column">
+                                <div>
+                                    <label>*Nombre</label>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div>
+                                    <label>*Email</label>
+                                </div>
+
+                            </div>
+                            <div class="column">
+                                <div>
+                                    <label>*Mensaje</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div style="background-color: #fcf5fc;padding-bottom: 50px;">
+    <div class="container">
+        <div class="div-center ">
+            <h5 class="decoracion-qs">Nuestro Productos</h5>
+        </div>
+        <div class="row">
+            <div class="separar" *ngFor="let lstProduct of productosArray">
+                <button class="boton4">
+        <div class="card" >
+            <img  src={{lstProduct.url_img}} alt="" width="190px">
+            <div class="card-body">
+                <h4 class="card-title">sdsd</h4>
+                <p class="card-text"> lstProduct </p>
+            </div>
+        </div>
+    </button>
+            </div>
+        </div>
+    </div>
+</div>

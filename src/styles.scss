@@ -286,3 +286,25 @@ body {
     padding-right: 10px;
     padding-top: 10px;
 }
+
+.boton4 {
+    //color: red !important;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: #fcf5fc;
+    border: 0px solid;
+    //border-color: purple;
+    position: relative;
+}
+
+.boton4:hover {
+    // color: black !important;
+    box-shadow: 0 4px 16px #4A1B43;
+    transition: all 0.2s ease;
+}
+
+.separar {
+    padding: 0.5%;
+    display: inline-block;
+}
