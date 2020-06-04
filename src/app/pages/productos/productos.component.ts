@@ -9,19 +9,45 @@ import { Productos } from '../../core/model/productos';
 })
 export class ProductosComponent implements OnInit {
 
+    items = [];
+    pageOfItems: Array<any>;
 
-  public  productosArray: Productos[] = [
-    {nombre: 'prueba', precio: 2.5, url_img: './assets/img/prueba-d.jpg'},
-    {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
-    {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
-    {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
-    {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
-  ];
 
+  public productosArray: Productos[];
+  public detalleProducto: Productos;
 
   constructor() { }
 
   ngOnInit() {
-  }
+
+    this.items = [
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_1.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_2.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_2.png'},
+      {nombre: 'prueba', precio: 2.5, url_img: './assets/img/contactos_2.png'},
+      ];
+
+}
+
+onChangePage(pageOfItems: Array<any>) {
+    // update current page of items
+    this.pageOfItems = pageOfItems;
+}
+
+
+public prueba(indice: Productos) {
+
+  this.detalleProducto = indice;
+
+}
 
 }

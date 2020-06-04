@@ -49,22 +49,29 @@
 
 
 <div style="background-color: #fcf5fc;padding-bottom: 50px;">
-    <div class="container">
-        <div class="div-center ">
+    <div class="container ">
+        <div class="div-center">
             <h5 class="decoracion-qs">Nuestro Productos</h5>
         </div>
-        <div class="row">
-            <div class="separar" *ngFor="let lstProduct of productosArray">
-                <button class="boton4">
-        <div class="card" >
-            <img  src={{lstProduct.url_img}} alt="" width="190px">
-            <div class="card-body">
-                <h4 class="card-title">sdsd</h4>
-                <p class="card-text"> lstProduct </p>
+        <div class="row div-center">
+            <div class="separar" *ngFor="let lstProduct of pageOfItems">
+                <button class="boton4 div-center" (click)="prueba(lstProduct)">
+                    <div class="card" >
+                        <img  src={{lstProduct.url_img}} alt="" width="190px">
+                        <div class="card-body">
+                            <h4 class="card-title">sdsd</h4>
+                            <p class="card-text"> lstProduct </p>
+                        </div>
+                    </div>
+                </button>
             </div>
         </div>
-    </button>
-            </div>
+    </div>
+    <div class="container ">
+
+        <div>
+            <jw-pagination class="estilo-text-pag pagination_producto" [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
         </div>
+
     </div>
 </div>
